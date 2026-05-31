@@ -8,4 +8,4 @@ const router = express.Router();
 router.post('/' , authenticate , createReel);
 router.get('/' , getAllReels);
 
-module.exports = router
+module.exports = router;
