@@ -1,6 +1,6 @@
-import { API_BASE_URL } from "../config/config";
+import { API_BASE_URL } from "../config/config.js";
 
-export const appiRequest = async( endpoint , options={})=>{
+export const apiRequest = async( endpoint , options={})=>{
     // get jwt from storege 
     const token = localStorage.getItem('token');
 
@@ -22,3 +22,4 @@ export const appiRequest = async( endpoint , options={})=>{
     return await response.json();
 
 }
+
